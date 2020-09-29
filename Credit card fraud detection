@@ -1,0 +1,12 @@
+Compétition de détection de frauds sur les cartes
+https://www.kaggle.com/mlg-ulb/creditcardfraud
+
+Dataset contenant 284,807 transactions de cartes de crédits en Septembre 2013 qui ont eu lieu en deux jours.
+Due à la confidentialité des données, les feautures V1,...à V28 sont les résultats de transformations PCA.
+Les feautures  'Time' et 'Amount' n'ont pas subi de transformations PCA.
+La feauture 'Time' contient les secondes écoulées entre la transaction encours et la première transaction.
+La feature 'Amount' est le montant de la transaction,  peut être utilisée pour un apprentissage dépendant des coûts, par exemple.
+La target 'Classe'  prend la valeur 1 étiquetée 'fraudulent' cas de fraude et 0 'genuineen'sinon.
+Recommandations:
+*L'ensemble de données est très déséquilibrés, la classe positive (fraudes) représente 0,172% de toutes les transactions.
+*recommandation de measurer le rappel avec Precision-Recall Curve (AUPRC), la matrice " confusion matrix accuracy" n'est pas significative à cause du désiquilibre de la classe fraud.
